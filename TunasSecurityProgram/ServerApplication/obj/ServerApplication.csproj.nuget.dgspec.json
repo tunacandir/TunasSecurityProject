@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\mericcandir\\source\\repos\\TunasSecurityProgram\\ServerApplication\\ServerApplication.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\mericcandir\\source\\repos\\TunasSecurityProgram\\ServerApplication\\ServerApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mericcandir\\source\\repos\\TunasSecurityProgram\\ServerApplication\\ServerApplication.csproj",
+        "projectName": "ServerApplication",
+        "projectPath": "C:\\Users\\mericcandir\\source\\repos\\TunasSecurityProgram\\ServerApplication\\ServerApplication.csproj",
+        "packagesPath": "C:\\Users\\mericcandir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mericcandir\\source\\repos\\TunasSecurityProgram\\ServerApplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mericcandir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\mericcandir\\source\\repos\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj": {
+                "projectPath": "C:\\Users\\mericcandir\\source\\repos\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.Azure.Management.Compute.Fluent": {
+              "target": "Package",
+              "version": "[1.36.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mericcandir\\source\\repos\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mericcandir\\source\\repos\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj",
+        "projectName": "TunasSecurityProgram",
+        "projectPath": "C:\\Users\\mericcandir\\source\\repos\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj",
+        "packagesPath": "C:\\Users\\mericcandir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mericcandir\\source\\repos\\TunasSecurityProgram\\TunasSecurityProgram\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mericcandir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Xamarin.Android.Support.Core.Utils": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.CustomTabs": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
+            "Xamarin.AndroidX.AppCompat.Resources": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Xamarin.AndroidX.Browser": {
+              "target": "Package",
+              "version": "[1.3.0.4, )"
+            },
+            "Xamarin.AndroidX.Legacy.Support.Core.UI": {
+              "target": "Package",
+              "version": "[1.0.0.7, )"
+            },
+            "Xamarin.AndroidX.Lifecycle.LiveData": {
+              "target": "Package",
+              "version": "[2.2.0.4, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "Xamarin.Google.Android.Material": {
+              "target": "Package",
+              "version": "[1.2.1.1, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

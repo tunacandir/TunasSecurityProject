@@ -1,0 +1,13 @@
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\bin\Debug\netcoreapp3.1\ServerApplication.exe
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\bin\Debug\netcoreapp3.1\ServerApplication.deps.json
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\bin\Debug\netcoreapp3.1\ServerApplication.runtimeconfig.json
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\bin\Debug\netcoreapp3.1\ServerApplication.runtimeconfig.dev.json
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\bin\Debug\netcoreapp3.1\ServerApplication.dll
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\bin\Debug\netcoreapp3.1\ServerApplication.pdb
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\obj\Debug\netcoreapp3.1\ServerApplication.csprojAssemblyReference.cache
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\obj\Debug\netcoreapp3.1\ServerApplication.AssemblyInfoInputs.cache
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\obj\Debug\netcoreapp3.1\ServerApplication.AssemblyInfo.cs
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\obj\Debug\netcoreapp3.1\ServerApplication.csproj.CoreCompileInputs.cache
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\obj\Debug\netcoreapp3.1\ServerApplication.dll
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\obj\Debug\netcoreapp3.1\ServerApplication.pdb
+C:\Users\mericcandir\source\repos\TunasSecurityProgram\ServerApplication\obj\Debug\netcoreapp3.1\ServerApplication.genruntimeconfig.cache

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8hJWH6VYxwUPAwMw4oME4n7UqrnJi2i0Zif+4r6W0eUXzOU6nn+f+gofVK0R6X1/n2KlWwRG3QLaNKkVTASrvA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tuna_\\Desktop\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tuna_\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\tuna_\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\tuna_\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
