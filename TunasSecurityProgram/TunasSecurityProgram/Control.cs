@@ -16,6 +16,7 @@ namespace TunasSecurityProgram
     [Activity(Label = "Control")]
     public class Control : Activity
     {
+        //Control.xml deki viewler için değişken belirliyoruz
         private Button btnTakeScreen, btnSleep, btnShutdown, btnLogout, btnBioAuth;
         private ImageView imageView;
         NetworkStream stream;
@@ -24,7 +25,7 @@ namespace TunasSecurityProgram
         {
             base.OnCreate(savedInstanceState);
             var client = Connection.Instance.client;
-            // Create your application here
+            // Viewleri değişkenlere atıyoruz
             SetContentView(Resource.Layout.Control);
             btnTakeScreen = FindViewById<Button>(Resource.Id.btnTakeScreen);
             btnSleep = FindViewById<Button>(Resource.Id.btnSleep);
@@ -33,7 +34,7 @@ namespace TunasSecurityProgram
             btnLogout = FindViewById<Button>(Resource.Id.btnLogout);
             imageView = FindViewById<ImageView>(Resource.Id.imageView);
 
-            //Sleep command button  
+            //Uykuya geçmek için clientdan servera SLP2 diye bir string yoluyoruz 
 
             btnSleep.Click += delegate
             {
@@ -43,7 +44,7 @@ namespace TunasSecurityProgram
                 stream.Write(message, 0, message.Length);
             };
 
-            //Shutdown command button  
+            //Kapatmak için clientdan servera SHTD3 diye bir string yoluyoruz 
 
             btnShutdown.Click += delegate
             {
@@ -53,7 +54,7 @@ namespace TunasSecurityProgram
                 stream.Write(message, 0, message.Length);
             };
 
-            //Auth Page command button
+            //Parmak izi kontrolü için BioAuthControl sayfasına giriş yapıyoruz ve AUTH1 kodunu servera yolluyoruz
 
             btnBioAuth.Click += delegate
             {
@@ -64,7 +65,7 @@ namespace TunasSecurityProgram
                 StartActivity(typeof(BioAuthControl));
             };
 
-            //Take Screenshot command button  
+            //Ekran görüntüsünü almak için TSC1 diye bir kod yolluyoruz gelen byteleri image a dönüştürüp ekranda gösteriyoruz bu işlem biraz uzun sürebiliyor 
 
             btnTakeScreen.Click += delegate
             {
@@ -77,7 +78,7 @@ namespace TunasSecurityProgram
                 imageView.SetImageBitmap(image);
             };
 
-            //Logout button  
+            //Clienti kapatıp ana sayfaya aktarıyor
 
             btnLogout.Click += delegate
             {
@@ -86,7 +87,7 @@ namespace TunasSecurityProgram
             };
         }
 
-        //Convert byte to Image  
+        //Serverdan gelen ekran görüntüsü byte olarak geliyor bunları image a dönüştürüyoruz 
 
         public byte[] getData(TcpClient client)
         {
@@ -105,7 +106,7 @@ namespace TunasSecurityProgram
             {
                 int curDataSize = Math.Min(buffersize, bytesLeft);
                 if (client.Available < curDataSize)
-                    curDataSize = client.Available;//This save me  
+                    curDataSize = client.Available;
 
                 bytes = stream.Read(data, bytesRead, curDataSize);
                 bytesRead += curDataSize;

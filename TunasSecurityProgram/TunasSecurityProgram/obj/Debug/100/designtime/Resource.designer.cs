@@ -14215,52 +14215,49 @@ namespace TunasSecurityProgram
 			public const int transition_transform = 2131296598;
 			
 			// aapt resource value: 0x7F090157
-			public const int txtOr = 2131296599;
+			public const int txtpassword = 2131296599;
 			
 			// aapt resource value: 0x7F090158
-			public const int txtpassword = 2131296600;
+			public const int txtusername = 2131296600;
 			
 			// aapt resource value: 0x7F090159
-			public const int txtusername = 2131296601;
+			public const int @unchecked = 2131296601;
 			
 			// aapt resource value: 0x7F09015A
-			public const int @unchecked = 2131296602;
+			public const int uniform = 2131296602;
 			
 			// aapt resource value: 0x7F09015B
-			public const int uniform = 2131296603;
+			public const int unlabeled = 2131296603;
 			
 			// aapt resource value: 0x7F09015C
-			public const int unlabeled = 2131296604;
+			public const int up = 2131296604;
 			
 			// aapt resource value: 0x7F09015D
-			public const int up = 2131296605;
+			public const int useLogo = 2131296605;
 			
 			// aapt resource value: 0x7F09015E
-			public const int useLogo = 2131296606;
+			public const int view_offset_helper = 2131296606;
 			
 			// aapt resource value: 0x7F09015F
-			public const int view_offset_helper = 2131296607;
+			public const int view_tree_saved_state_registry_owner = 2131296607;
 			
 			// aapt resource value: 0x7F090160
-			public const int view_tree_saved_state_registry_owner = 2131296608;
+			public const int visible = 2131296608;
 			
 			// aapt resource value: 0x7F090161
-			public const int visible = 2131296609;
-			
-			// aapt resource value: 0x7F090162
-			public const int visible_removing_fragment_view_tag = 2131296610;
-			
-			// aapt resource value: 0x7F090164
-			public const int withinBounds = 2131296612;
+			public const int visible_removing_fragment_view_tag = 2131296609;
 			
 			// aapt resource value: 0x7F090163
-			public const int withText = 2131296611;
+			public const int withinBounds = 2131296611;
+			
+			// aapt resource value: 0x7F090162
+			public const int withText = 2131296610;
+			
+			// aapt resource value: 0x7F090164
+			public const int wrap_content = 2131296612;
 			
 			// aapt resource value: 0x7F090165
-			public const int wrap_content = 2131296613;
-			
-			// aapt resource value: 0x7F090166
-			public const int zero_corner_chip = 2131296614;
+			public const int zero_corner_chip = 2131296613;
 			
 			static Id()
 			{

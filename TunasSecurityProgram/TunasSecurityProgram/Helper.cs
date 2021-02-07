@@ -10,25 +10,27 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+/*
+ Bu classımız database ile alakalı görevleri yerine getiriyor.
+ */
 namespace TunasSecurityProgram
 {
     public class Helper : SQLiteOpenHelper
     {
-        private static string _DatabaseName = "clientDatabase";
+        private static string _DatabaseName = "clientDatabase"; //Databaseimizin adı
 
         public Helper(Context context) : base(context, _DatabaseName, null, 1) { }
         public override void OnCreate(SQLiteDatabase db)
         {
             db.ExecSQL(Helper.CreateQuery);
         }
-
+        //Yeni bir kayıt atıldığında eski quetyi silerek oncreateden yeniden yeni queryi alıp çalıştırıyor
         public override void OnUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
         {
             db.ExecSQL(Helper.DeleteQuery);
             OnCreate(db);
         }
-
+        //query için gerekli değişkenler
         private const string TableName = "adminTable";
         private const string ColumnID = "id";
         private const string ColumnUsername = "username";
@@ -36,7 +38,7 @@ namespace TunasSecurityProgram
         private const string ColumnPassword = "password";
         private const string ColumnEmail = "email";
         private const string ColumnMobile = "mobile";
-
+        //Yeni bir admini eklerken kullanılan query
         public const string CreateQuery = "CREATE TABLE " + TableName +
             " ( "
             + ColumnID + " INTEGER PRIMARY KEY,"
@@ -47,7 +49,7 @@ namespace TunasSecurityProgram
             + ColumnMobile + " TEXT)";
 
         public const string DeleteQuery = "DROP TABLE IF EXISTS " + TableName;
-
+        //Kayıdı yapmamızı sağlayan metod
         public void Register(Context context, Admin admin)
         {
             SQLiteDatabase db = new Helper(context).WritableDatabase;
@@ -60,6 +62,7 @@ namespace TunasSecurityProgram
             db.Insert(TableName, null, Values);
             db.Close();
         }
+        //Giriş ekranında adminin kaydının databasede olup olmadığını kontrol ediyor.
         public Admin Authenticate(Context context, Admin admin)
         {
             SQLiteDatabase db = new Helper(context).ReadableDatabase;
@@ -74,7 +77,7 @@ namespace TunasSecurityProgram
             }
             return null;
         }
-
+        //Adminlerin listesine eklenen yeni admini ekliyoruz
         public List<Admin> GetAdmin(Context context)
         {
             List<Admin> admins = new List<Admin>();

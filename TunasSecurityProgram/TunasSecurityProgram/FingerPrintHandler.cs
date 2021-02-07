@@ -19,7 +19,7 @@ namespace TunasSecurityProgram
         {
             this.mainActivity = mainActivity;
         }
-        internal void StartAuthentication(FingerprintManager fingerprintManager, FingerprintManager.CryptoObject cryptoObject)
+        internal void StartAuthentication(FingerprintManager fingerprintManager, FingerprintManager.CryptoObject cryptoObject) //BioAuthControlden gelen istek üzerine parmak izi taraması yapılır
         {
             CancellationSignal cancellationSignal = new CancellationSignal();
             if (ActivityCompat.CheckSelfPermission(mainActivity, Manifest.Permission.UseFingerprint)!= (int)Android.Content.PM.Permission.Granted)
@@ -28,7 +28,7 @@ namespace TunasSecurityProgram
             }
             fingerprintManager.Authenticate(cryptoObject, cancellationSignal, 0, this, null);
         }
-        public override void OnAuthenticationFailed()
+        public override void OnAuthenticationFailed() //Parmak izi yanlış ise AUTH2 kodunu servera yollar 1 saniye telefon titrer ve control sayfasını açar
         {
             var client = Connection.Instance.client;
             stream = client.GetStream();
@@ -43,7 +43,7 @@ namespace TunasSecurityProgram
             Toast.MakeText(mainActivity, "Fingerprint Authentication failed!", ToastLength.Long).Show();
             mainActivity.StartActivity(new Intent(mainActivity, typeof(Control)));
         }
-        public override void OnAuthenticationSucceeded(FingerprintManager.AuthenticationResult result)
+        public override void OnAuthenticationSucceeded(FingerprintManager.AuthenticationResult result) //Parmak izi doğru ise AUTH3 kodunu servera yollar 1 saniye telefon titrer ve control sayfasını açar
         {
             var client = Connection.Instance.client;
             stream = client.GetStream();

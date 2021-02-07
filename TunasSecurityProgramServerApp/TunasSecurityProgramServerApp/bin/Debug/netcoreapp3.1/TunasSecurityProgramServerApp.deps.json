@@ -64,19 +64,10 @@
         "runtime": {
           "System.Windows.Forms.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.8.4084.0"
+            "fileVersion": "4.8.4270.0"
           }
         },
         "resources": {
-          "ar/System.Windows.Forms.resources.dll": {
-            "locale": "ar"
-          },
-          "fr/System.Windows.Forms.resources.dll": {
-            "locale": "fr"
-          },
-          "ru/System.Windows.Forms.resources.dll": {
-            "locale": "ru"
-          },
           "tr/System.Windows.Forms.resources.dll": {
             "locale": "tr"
           }
@@ -94,19 +85,10 @@
         "runtime": {
           "System.Deployment.dll": {
             "assemblyVersion": "4.0.0.0",
-            "fileVersion": "4.8.4084.0"
+            "fileVersion": "4.8.4270.0"
           }
         },
         "resources": {
-          "ar/System.Deployment.resources.dll": {
-            "locale": "ar"
-          },
-          "fr/System.Deployment.resources.dll": {
-            "locale": "fr"
-          },
-          "ru/System.Deployment.resources.dll": {
-            "locale": "ru"
-          },
           "tr/System.Deployment.resources.dll": {
             "locale": "tr"
           }
@@ -120,15 +102,6 @@
           }
         },
         "resources": {
-          "ar/System.Runtime.Serialization.Formatters.Soap.resources.dll": {
-            "locale": "ar"
-          },
-          "fr/System.Runtime.Serialization.Formatters.Soap.resources.dll": {
-            "locale": "fr"
-          },
-          "ru/System.Runtime.Serialization.Formatters.Soap.resources.dll": {
-            "locale": "ru"
-          },
           "tr/System.Runtime.Serialization.Formatters.Soap.resources.dll": {
             "locale": "tr"
           }

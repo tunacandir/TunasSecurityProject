@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tuna_\\Desktop\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp.csproj": {}
+    "C:\\Users\\tuna_\\Documents\\GitHub\\TunasSecurityProject\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tuna_\\Desktop\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp.csproj": {
+    "C:\\Users\\tuna_\\Documents\\GitHub\\TunasSecurityProject\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tuna_\\Desktop\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp.csproj",
+        "projectUniqueName": "C:\\Users\\tuna_\\Documents\\GitHub\\TunasSecurityProject\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp.csproj",
         "projectName": "TunasSecurityProgramServerApp",
-        "projectPath": "C:\\Users\\tuna_\\Desktop\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp.csproj",
+        "projectPath": "C:\\Users\\tuna_\\Documents\\GitHub\\TunasSecurityProject\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp.csproj",
         "packagesPath": "C:\\Users\\tuna_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tuna_\\Desktop\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp\\obj\\",
+        "outputPath": "C:\\Users\\tuna_\\Documents\\GitHub\\TunasSecurityProject\\TunasSecurityProgramServerApp\\TunasSecurityProgramServerApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

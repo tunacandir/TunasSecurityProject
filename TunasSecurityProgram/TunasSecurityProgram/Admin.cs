@@ -8,10 +8,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+/*
+ * Bu classda adminin kayıt esnasında vermesi gereken ve local veri tabanına 
+ * kayıt olacak bilgileri belirtiliyor.
+ */
 
 namespace TunasSecurityProgram
 {
-    public class Admin
+    public class Admin 
     {
         public string ID { get; set; }
         public string Username { get; set; }
@@ -20,7 +24,7 @@ namespace TunasSecurityProgram
         public string Password { get; set; }
         public string Mobile { get; set; }
         public Admin() { }
-        public Admin(string Id, string username, string fullName, string email, string password, string mobile) //Constructor with all parameters  
+        public Admin(string Id, string username, string fullName, string email, string password, string mobile) //Tüm parametrelere sahip constructor 
         {
             ID = Id;
             Username = username;
@@ -29,7 +33,7 @@ namespace TunasSecurityProgram
             Password = password;
             Mobile = mobile;
         }
-        public Admin(string Password) //Constructor with one parameter for password verifing  
+        public Admin(string Password) //Parola doğrulaması için tek parametreye sahip constructor
         {
             this.Password = Password;
         }

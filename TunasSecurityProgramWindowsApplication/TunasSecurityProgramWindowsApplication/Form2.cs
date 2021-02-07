@@ -26,7 +26,7 @@ namespace TunasSecurityProgramWindowsApplication
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1.frm3.Show(); //2. formu açar
+            Form1.frm3.Show(); //3. formu açar
             this.Hide(); // bu formu saklar
         }
 

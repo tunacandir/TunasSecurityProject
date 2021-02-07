@@ -62,13 +62,13 @@ namespace TunasSecurityProgramWindowsApplication
             {
                 Form1.dogru++; // doğru sayacını arttır
                 this.Hide(); // bu formu sakla
-                Form1.frm6.Show(); //form 5 i aç
+                Form1.frm6.Show(); //form 6yı aç
             }
             else //eğer değilse
             {
                 Form1.yanlis++; //yanlış sayısını arttır
                 this.Hide(); //bu formu sakla
-                Form1.frm6.Show(); //form 5 i göster
+                Form1.frm6.Show(); //form 6yı göster
             }
 
             timer1.Enabled = false; //bu formdaki timeri kapat

@@ -14,7 +14,7 @@ using System.Text;
 
 namespace TunasSecurityProgram
 {
-    [Activity(Label = "BioAuthControl", Theme = "@style/AppTheme")] //, Theme = "@style/AppTheme"
+    [Activity(Label = "BioAuthControl", Theme = "@style/AppTheme")] 
     public class BioAuthControl : Activity
     {
         private Button btnGoBack;
@@ -45,23 +45,23 @@ namespace TunasSecurityProgram
                 return;
             }
                 
-            if (!fingerprintManager.IsHardwareDetected)
+            if (!fingerprintManager.IsHardwareDetected) //telefonda parmak izi için donanım bulunamazsa
             {
                 Toast.MakeText(this, "FingerPrint authentication permission not enable", ToastLength.Short).Show();
             }
             else
             {
-                if (!fingerprintManager.HasEnrolledFingerprints)
+                if (!fingerprintManager.HasEnrolledFingerprints) //telefonda parmak izi kayıtlı değilse
                 {
                     Toast.MakeText(this, "Register at least one fingerprint in Settings", ToastLength.Short).Show();
                 } 
                 else
                 {
-                    if (!keyguardManager.IsKeyguardSecure)
+                    if (!keyguardManager.IsKeyguardSecure) //ekran kilidi yoksa
                         Toast.MakeText(this, "Lock screen security not enable in Settings", ToastLength.Short).Show();
-                    else
+                    else //key oluşturuyoruz
                         GenKey();
-                    if (CipherInit())
+                    if (CipherInit()) //FingerPrintHandler classını çalıştırmamıza yarıyor
                     {
                         FingerprintManager.CryptoObject cryptoObject = new FingerprintManager.CryptoObject(cipher);
                         FingerprintHandler handler = new FingerprintHandler(this);

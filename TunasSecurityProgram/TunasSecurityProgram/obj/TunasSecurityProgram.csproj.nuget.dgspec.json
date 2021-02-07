@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tuna_\\Desktop\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj": {}
+    "C:\\Users\\tuna_\\Documents\\GitHub\\TunasSecurityProject\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tuna_\\Desktop\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj": {
+    "C:\\Users\\tuna_\\Documents\\GitHub\\TunasSecurityProject\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tuna_\\Desktop\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj",
+        "projectUniqueName": "C:\\Users\\tuna_\\Documents\\GitHub\\TunasSecurityProject\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj",
         "projectName": "TunasSecurityProgram",
-        "projectPath": "C:\\Users\\tuna_\\Desktop\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj",
+        "projectPath": "C:\\Users\\tuna_\\Documents\\GitHub\\TunasSecurityProject\\TunasSecurityProgram\\TunasSecurityProgram\\TunasSecurityProgram.csproj",
         "packagesPath": "C:\\Users\\tuna_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tuna_\\Desktop\\TunasSecurityProgram\\TunasSecurityProgram\\obj\\",
+        "outputPath": "C:\\Users\\tuna_\\Documents\\GitHub\\TunasSecurityProject\\TunasSecurityProgram\\TunasSecurityProgram\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

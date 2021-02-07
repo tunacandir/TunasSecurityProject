@@ -4,32 +4,37 @@
     android:layout_width="match_parent"  
     android:layout_height="match_parent"  
     android:padding="20dp">
-    
-    <Button  
-        android:text="Sleep"  
-        android:layout_width="match_parent"  
-        android:layout_height="wrap_content"  
-        android:id="@+id/btnSleep" />
-    <Button  
-        android:text="Take Screenshot"  
-        android:layout_width="match_parent"  
-        android:layout_height="wrap_content"  
-        android:id="@+id/btnTakeScreen" />  
-    <Button  
-        android:text="Shutdown"  
-        android:layout_width="match_parent"  
-        android:layout_height="wrap_content"  
-        android:id="@+id/btnShutdown" /> 
+    <!-- Parmak izi taratma sayfasına yönlendirmek için kullanılan buton -->
     <Button  
         android:text="Biometrich Auth"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
         android:id="@+id/btnBioAuth"/>
+    <!-- Ekran görüntüsü almak için kullanılan buton -->
+    <Button  
+        android:text="Take Screenshot"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/btnTakeScreen" />  
+    <!-- Bilgisayarı uyutmak için kullanılan buton -->
+    <Button  
+        android:text="Sleep"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/btnSleep" />
+    <!-- Bilgisayarı kapatmak için kullanılan buton -->
+    <Button  
+        android:text="Shutdown"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:id="@+id/btnShutdown" /> 
+    <!-- Gelen ekran görüntüsünün gösterileceği alan -->
     <ImageView  
         android:id="@+id/imageView"  
         android:layout_width="match_parent"  
         android:layout_height="0dp"  
         android:layout_weight="1" />  
+    <!-- Çıkış yapmak için kullanılan buton -->
     <Button  
         android:text="Logout"  
         android:layout_width="match_parent"  

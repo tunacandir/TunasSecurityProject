@@ -41,7 +41,7 @@ namespace TunasSecurityProgramWindowsApplication
             {
                 Form1.yanlis++; // eğer diğerleri seçili ise veya seçilmeyen varsa yanlş sayacını arttırır
             }
-            Form1.frm4.Show(); // üçüncü formu  açar
+            Form1.frm4.Show(); // 4. formu  açar
             this.Hide(); // bu formu saklar
             timer1.Enabled = false; // bu formadaki timeri etkisiz hale getirir
         }

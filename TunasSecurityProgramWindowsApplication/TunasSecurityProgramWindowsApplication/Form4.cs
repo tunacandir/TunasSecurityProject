@@ -67,31 +67,31 @@ namespace TunasSecurityProgramWindowsApplication
             {
                 Form1.yanlis++; //yanlışı arttırın
                 this.Hide(); //bu formu sakla
-                Form1.frm5.Show(); // form 4 ü göster
+                Form1.frm5.Show(); // form 5i göster
             }
             else if (checkBox2.Checked == true && checkBox3.Checked == true && checkBox1.Checked == true) //checkbox 1 2 ve 3 seçili ise
             {
                 Form1.yanlis++; //yanlış arttırır
                 this.Hide(); //bu formu sakla
-                Form1.frm5.Show(); // form4ü göster
+                Form1.frm5.Show(); // form5i göster
             }
             else if (checkBox2.Checked == true && checkBox3.Checked == true && checkBox4.Checked == true) //checkbox 2 3 ve 4 seçili ise
             {
                 Form1.yanlis++; //yanlış arttırır
                 this.Hide(); //bu formu sakla
-                Form1.frm5.Show(); // form4ü göster
+                Form1.frm5.Show(); // form5i göster
             }
             else if (checkBox2.Checked == true && checkBox3.Checked == true) // check box 2 ve 3 seçiliyse
             {
                 Form1.dogru++; // doğru sayacını arttır
                 this.Hide(); //bu formu sakla
-                Form1.frm5.Show(); // 4. formu göster
+                Form1.frm5.Show(); // 5. formu göster
             }
             else
             {
                 Form1.yanlis++; //eğer farklı bir şeyler seçili ise yanlış say
                 this.Hide(); //bu formu sakla
-                Form1.frm5.Show(); // form4ü göster
+                Form1.frm5.Show(); // form5i göster
             }
 
             timer1.Enabled = false; //timerı gizle

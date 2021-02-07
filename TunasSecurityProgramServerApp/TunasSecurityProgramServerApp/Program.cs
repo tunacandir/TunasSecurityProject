@@ -13,12 +13,12 @@ namespace TunasSecurityProgramServerApp
 {
     public class Program
     {
-        //Communication for the Xamarin application
+        //Xamarin uygulaması ile iletişimde kullanılan değişkenler
         public static TcpClient client;
         private static TcpListener listener;
         private static string ipString;
 
-        //Communication to Windows Forms Application
+        //Windows içerisinde iletişim kurabilmek için kullanılan değişkenler
         [DllImport("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, uint Msg, uint wParam, int lParam);
 
@@ -29,7 +29,12 @@ namespace TunasSecurityProgramServerApp
 
         static void Main(string[] args)
         {
-            //Xamarin application communication
+            /* 
+            Program bilgisayarın local Ip adresini çekiyor ve benim programda belirttiğim portta server olarak çalışmaya başlıyor.
+            Daha sonra telefon uygulamasından bağlandığınızda telefeon uygulamasından bir listenera bir istek gidiyor ve server ile uygulama birbirine bağlanıyor.
+            Client yani telefon, servera belirli kodları string olarak yolluyor ve eğer server bunları algılarsa try catch buloğu içerindeki if, elseler ile kontrolü yapılıp
+            gerekli işlemleri sağlıyor.
+            */
             IPAddress[] localIp = Dns.GetHostAddresses(Dns.GetHostName());
             foreach (IPAddress address in localIp)
             {
@@ -85,23 +90,23 @@ namespace TunasSecurityProgramServerApp
                     {
                         Console.WriteLine("Authentication Failed!" + " \n");
                     }
-                    else if (data.ToUpper().Contains("AUTH3"))
+                    else if (data.ToUpper().Contains("AUTH3")) //Telefondan bu kod gelirse AuthenticationSuccesful kodu eğer ismi belirtilen uygulama penceresi açıksa ona yollanır.
                     {
                         Console.WriteLine("Authentication Succeeded!" + " \n");
                         Process[] procs = Process.GetProcessesByName(_procName);
                         if (procs.Length > 0)
                         {
-                            TargetHwnd = procs[0].MainWindowHandle;
+                            TargetHwnd = procs[0].MainWindowHandle; //Target pencerenin adını alıyoruz
                         }
 
-                        if (TargetHwnd == IntPtr.Zero)
+                        if (TargetHwnd == IntPtr.Zero) //eğer adı yoksa 
                         {
                             Console.WriteLine("Window not found!");
                         }
                         else
                         {
                             Console.WriteLine("Window has found!");
-                            SendString("AuthenticationSuccesful");
+                            SendString("AuthenticationSuccesful"); // Bilgisayarın içerisinden hedef pencereye bilgi gönderiliyor.
                         }
                     }
                     else if (data.ToUpper().Contains("AUTH4"))
@@ -113,6 +118,7 @@ namespace TunasSecurityProgramServerApp
                         Console.WriteLine("App is connected!" + " \n");
                     }
                 }
+                //Bir hata olması durumunda client kapatılır
                 catch (Exception exc)
                 {
                     client.Dispose();
@@ -120,20 +126,20 @@ namespace TunasSecurityProgramServerApp
                 }
             }
 
-            //Workstation Shutdown function  
+            //Masaüstümüzü kapatmamız için kullandığımız fonksiyon
 
             void Shutdown()
             {
                 System.Diagnostics.Process.Start("Shutdown", "-s -t 10");
             }
 
+            //Masaüstümüzü uyku moduna sokmak için kullandığımız fonksiyon
             void Sleep()
             {
-                //Application.SetSuspendState(PowerState.Suspend, true, true);
                 Application.SetSuspendState(PowerState.Suspend, true, true);
             }
 
-            //Save Screenshot function  
+            //Ekran görüntüsü almaya yarayan fonksiyon. Görüntüyü bitmap olarak saklar 
 
             Bitmap SaveScreenshot()
             {
@@ -141,17 +147,17 @@ namespace TunasSecurityProgramServerApp
                                                Screen.PrimaryScreen.Bounds.Height,
                                                PixelFormat.Format32bppArgb);
 
-                // Create a graphics object from the bitmap.  
+                //Bitmapden grafik bir obje oluşturur 
 
                 var gfxScreenshot = Graphics.FromImage(bmpScreenshot);
 
-                // Take the screenshot from the upper left corner to the right bottom corner
+                //Ekran görüntüsünü sol üst köşeden sağ alt köşeye alır
 
                 gfxScreenshot.CopyFromScreen(Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, 0, 0, Screen.PrimaryScreen.Bounds.Size, CopyPixelOperation.SourceCopy);
                 return bmpScreenshot;
             }
 
-            //Convert Image to byte type data.
+            //Görüntüyü bayt tipi verilere dönüştürür
             void sendData(byte[] data, NetworkStream stream)
             {
                 int bufferSize = 1024;
@@ -174,6 +180,7 @@ namespace TunasSecurityProgramServerApp
             }
         }
 
+        //Windows uygulamalarının arasında anlaşmasında kullanacağımız string yollama fonksiyonumuz
         private static void SendString(string sMsg)
         {
             byte[] bytes = Encoding.UTF8.GetBytes(sMsg);
@@ -182,11 +189,11 @@ namespace TunasSecurityProgramServerApp
                 SendMessage(TargetHwnd, WM_USER, 38, b);
             }
 
-            //send terminating character so receiving app knows  
-            //to stop reading string  
+            //Terminate edecek karakter yollayarak alıcının diziyi okuması durdurulur
             SendMessage(TargetHwnd, WM_USER, 38, 0);
         }
 
+        //Target pencereyi belirtmek için kullanılır
         private static IntPtr TargetHwnd
         {
             get { return _hwnd; }

@@ -10,6 +10,7 @@ namespace TunasSecurityProgram
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
+        //resourcesın altındaki layoutun altındaki activity_main.xml inde bulunan nesnelerin tanımlanması
         private EditText txtUsername, txtPassword;
         private Button btnSignIn, btnCreate;
         Helper helper;
@@ -17,17 +18,18 @@ namespace TunasSecurityProgram
         {
             base.OnCreate(savedInstanceState);
 
-            // Set our view from the "main" layout resource  
+            // Görünümümüzü "Main" e ayarlıyoruz
             SetContentView(Resource.Layout.activity_main);
-
+            //activity_main.xml den viewları bulup objelerimize atıyoruz
             txtUsername = FindViewById<EditText>(Resource.Id.txtusername);
             txtPassword = FindViewById<EditText>(Resource.Id.txtpassword);
             btnCreate = FindViewById<Button>(Resource.Id.btnSignUp);
             btnSignIn = FindViewById<Button>(Resource.Id.btnSign);
             helper = new Helper(this);
-
+            //Eğer yeni kullanıcı create etmek istersek Signup sayfasına yönlendiriliyoruz
             btnCreate.Click += delegate { StartActivity(typeof(SignUp)); };
-
+            //Girişdekayıt esnasında belirtilen username ve password doğru girilirse Connect activitesi başlatılıyor
+            //eğer yanlış ise uyarı veriyor
             btnSignIn.Click += delegate
             {
                 try

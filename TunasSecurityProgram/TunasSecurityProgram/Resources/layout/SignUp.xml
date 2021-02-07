@@ -4,39 +4,47 @@
     android:layout_width="match_parent"  
     android:layout_height="match_parent"  
     android:padding="20dp">  
+    <!-- İsim soyisim girmek için textbox -->
     <EditText  
         android:hint="Full Name"  
         android:layout_width="match_parent"  
-        android:layout_height="wrap_content"  
-        android:id="@+id/edtfullname"/>  
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@+id/edtfullname"/> 
+    <!-- Username girmek için textbox -->
     <EditText  
         android:hint="Username"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
         android:id="@+id/edtusername"/>  
+    <!-- Email girmek için textbox -->
     <EditText  
         android:hint="Email"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
-        android:id="@+id/edtEmail"  
-         />  
+        android:id="@+id/edtEmail" />  
+    <!-- Telefon numarası girmek için textbox -->
     <EditText  
         android:hint="Mobile"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
         android:id="@+id/edtMobile"  
-        android:inputType="phone" />  
+        android:inputType="phone" />
+    <!-- Şifre girmek için textbox -->
     <EditText  
         android:hint="Password"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
         android:id="@+id/edtpassword"  
         android:inputType="textPassword" />  
+    <!-- Yeni admin oluşturmak için buton -->
     <Button  
         android:text="Create"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
+        android:layout_marginTop="30dp"
         android:id="@+id/btnCreate" />  
+    <!-- Ana sayfaya dönemk için olan buton  -->
     <Button  
         android:text="Back to Home"  
         android:layout_width="match_parent"  

@@ -3,26 +3,32 @@
     android:orientation="vertical"  
     android:layout_width="match_parent"  
     android:layout_height="match_parent"  
-    android:padding="20dp">  
+    android:padding="20dp">
     <TextView  
         android:text="Connect to Server"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
         android:gravity="center"  
+        android:layout_marginTop="50dp"
         android:id="@+id/textView1" />  
+    <!-- Ip adresi girmek için textbox -->
     <EditText  
         android:hint="IP Address"  
         android:layout_width="match_parent"  
-        android:layout_height="wrap_content"  
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
         android:id="@+id/edtIpAddress" />  
+    <!-- Portu girmek için textbox -->
     <EditText  
         android:hint="Port"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
         android:id="@+id/edtPort" />  
+    <!-- Bağlanmak için olan buton-->
     <Button  
         android:text="Connect"  
         android:layout_width="match_parent"  
-        android:layout_height="wrap_content"  
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="200dp"
         android:id="@+id/btnConnect" />  
 </LinearLayout>  

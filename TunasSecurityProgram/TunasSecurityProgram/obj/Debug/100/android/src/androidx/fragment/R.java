@@ -143,7 +143,7 @@ public final class R {
 		public static final int text2 = 0x7f09012e;
 		public static final int time = 0x7f09013c;
 		public static final int title = 0x7f09013d;
-		public static final int visible_removing_fragment_view_tag = 0x7f090154;
+		public static final int visible_removing_fragment_view_tag = 0x7f090153;
 	}
 	public static final class integer {
 		public static final int status_bar_notification_info_maxnum = 0x7f0a0014;

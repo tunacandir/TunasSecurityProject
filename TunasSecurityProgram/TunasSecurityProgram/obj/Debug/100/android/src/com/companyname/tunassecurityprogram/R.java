@@ -6866,22 +6866,21 @@ public final class R {
     public static final int transition_position=0x7f090146;
     public static final int transition_scene_layoutid_cache=0x7f090147;
     public static final int transition_transform=0x7f090148;
-    public static final int txtOr=0x7f090149;
-    public static final int txtpassword=0x7f09014a;
-    public static final int txtusername=0x7f09014b;
-    public static final int unchecked=0x7f09014c;
-    public static final int uniform=0x7f09014d;
-    public static final int unlabeled=0x7f09014e;
-    public static final int up=0x7f09014f;
-    public static final int useLogo=0x7f090150;
-    public static final int view_offset_helper=0x7f090151;
-    public static final int view_tree_saved_state_registry_owner=0x7f090152;
-    public static final int visible=0x7f090153;
-    public static final int visible_removing_fragment_view_tag=0x7f090154;
-    public static final int withText=0x7f090155;
-    public static final int withinBounds=0x7f090156;
-    public static final int wrap_content=0x7f090157;
-    public static final int zero_corner_chip=0x7f090158;
+    public static final int txtpassword=0x7f090149;
+    public static final int txtusername=0x7f09014a;
+    public static final int unchecked=0x7f09014b;
+    public static final int uniform=0x7f09014c;
+    public static final int unlabeled=0x7f09014d;
+    public static final int up=0x7f09014e;
+    public static final int useLogo=0x7f09014f;
+    public static final int view_offset_helper=0x7f090150;
+    public static final int view_tree_saved_state_registry_owner=0x7f090151;
+    public static final int visible=0x7f090152;
+    public static final int visible_removing_fragment_view_tag=0x7f090153;
+    public static final int withText=0x7f090154;
+    public static final int withinBounds=0x7f090155;
+    public static final int wrap_content=0x7f090156;
+    public static final int zero_corner_chip=0x7f090157;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f0a0000;

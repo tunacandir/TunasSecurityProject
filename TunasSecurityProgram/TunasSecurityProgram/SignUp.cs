@@ -14,6 +14,7 @@ namespace TunasSecurityProgram
     [Activity(Label = "SignUp")]
     public class SignUp : Activity
     {
+        //Signup layoutundaki onjeleri kullanmak için değişkenlerimizi tanımlıyoruz
         private EditText edtFullname, edtUsername, edtEmail, edtPassword, edtMobile;
         private Button btnCreate, btnBack;
         Helper helper;
@@ -22,9 +23,9 @@ namespace TunasSecurityProgram
         {
             base.OnCreate(savedInstanceState);
 
-            // Create your application here  
+            // Signup sayfasını gösteriyoruz  
             SetContentView(Resource.Layout.SignUp);
-
+            //Signup.xml deki viewları objeleremize atıyoruz
             edtFullname = FindViewById<EditText>(Resource.Id.edtfullname);
             edtUsername = FindViewById<EditText>(Resource.Id.edtusername);
             edtPassword = FindViewById<EditText>(Resource.Id.edtpassword);
@@ -33,9 +34,13 @@ namespace TunasSecurityProgram
             btnCreate = FindViewById<Button>(Resource.Id.btnCreate);
             btnBack = FindViewById<Button>(Resource.Id.btnBack);
             helper = new Helper(this);
-
+            //Geri gitme butonuna tıklanırsa Ana sayfaya dönüyoruz.
             btnBack.Click += delegate { StartActivity(typeof(MainActivity)); };
-
+            /*
+             * Butona tıklandığında admin classından yeni bir obje oluşturuyoruz.
+             * Username ve passwordun dolu olup olmadığını kontrol ediyoruz eğer dolu değilse uyaru veriyor, doluysa
+             * yeni adminimizin kaydı tamamlanıyor
+             */
             btnCreate.Click += delegate
             {
                 Admin admin = new Admin()
