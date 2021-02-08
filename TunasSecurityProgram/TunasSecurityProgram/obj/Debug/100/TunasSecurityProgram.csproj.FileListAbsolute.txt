@@ -1378,7 +1378,6 @@ C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasS
 C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\res\layout\signup.xml
 C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\res\layout\connect.xml
 C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\res\layout\control.xml
-C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\res\drawable\fingerprint.png
 C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\res\layout\bioauthcontrol.xml
 C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\uploadflags.txt
 C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\resolvedassemblies.hash
@@ -1966,3 +1965,5 @@ C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasS
 C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\res\drawable\appbackground.jpg
+C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\res\drawable\fingerprint.png

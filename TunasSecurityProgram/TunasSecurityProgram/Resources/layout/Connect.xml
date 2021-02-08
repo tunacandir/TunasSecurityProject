@@ -3,20 +3,21 @@
     android:orientation="vertical"  
     android:layout_width="match_parent"  
     android:layout_height="match_parent"  
-    android:padding="20dp">
+    android:padding="20dp"
+    android:background="@drawable/appBackground">
     <TextView  
         android:text="Connect to Server"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"  
         android:gravity="center"  
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:id="@+id/textView1" />  
     <!-- Ip adresi girmek için textbox -->
     <EditText  
         android:hint="IP Address"  
         android:layout_width="match_parent"  
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="85dp"
         android:id="@+id/edtIpAddress" />  
     <!-- Portu girmek için textbox -->
     <EditText  

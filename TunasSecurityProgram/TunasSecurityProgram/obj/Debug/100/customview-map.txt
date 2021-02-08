@@ -27,6 +27,8 @@ com.google.android.material.bottomnavigation.BottomNavigationView;C:\Users\tuna_
 com.google.android.material.tabs.TabLayout;C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\lp\48\jl\res\layout\fallbacktabbardonotuse.xml
 com.google.android.material.tabs.TabLayout;C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\lp\48\jl\res\layout\rootlayout.xml
 com.google.android.material.tabs.TabLayout;C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\lp\48\jl\res\layout\tabbar.xml
+crc643f46942d9dd1fff9.ShellFlyoutLayout;C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\lp\48\jl\res\layout\flyoutcontent.xml
+crc64720bb2db43a66fe9.FormsViewPager;C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\lp\48\jl\res\layout\rootlayout.xml
 declare-styleable;C:\Users\tuna_\Documents\GitHub\TunasSecurityProject\TunasSecurityProgram\TunasSecurityProgram\obj\Debug\100\lp\48\jl\res\values\attrs.xml
 EditText;obj\Debug\100\res\layout\activity_main.xml
 EditText;obj\Debug\100\res\layout\connect.xml
